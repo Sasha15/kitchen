@@ -1,0 +1,502 @@
+@font-face {
+    font-family: "ProximaNova";
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "ProximaNova";
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+    src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
+    url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+	font-family: "ProximaNova";
+	src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot");
+	src: url("../fonts/ProximaNovaBlack/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNovaBlack/ProximaNovaBlack.woff") format("woff"),
+	url("../fonts/ProximaNovaBlack/ProximaNovaBlack.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 800;
+}
+@font-face {
+	font-family: "OstrichSans";
+	src: url("../fonts/OstrichSansMedium/OstrichRegular.eot");
+	src: url("../fonts/OstrichSansMedium/OstrichRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OstrichSansMedium/OstrichRegular.woff") format("woff"),
+	url("../fonts/OstrichSansMedium/OstrichRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+    font-family: "OstrichSans";
+	src: url("../fonts/OstrichSansBold/OstrichBold.eot");
+	src: url("../fonts/OstrichSansBold/OstrichBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OstrichSansBold/OstrichBold.woff") format("woff"),
+	url("../fonts/OstrichSansBold/OstrichBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "OstrichSans";
+	src: url("../fonts/OstrichSansBlack/OstrichBlack.eot");
+	src: url("../fonts/OstrichSansBlack/OstrichBlack.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OstrichSansBlack/OstrichBlack.woff") format("woff"),
+	url("../fonts/OstrichSansBlack/OstrichBlack.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 800;
+}
+@font-face {
+    font-family: "Neou";
+	src: url("../fonts/NeouBold/NeouBold.eot");
+	src: url("../fonts/NeouBold/NeouBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/NeouBold/NeouBold.woff") format("woff"),
+	url("../fonts/NeouBold/NeouBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+    font-family: "Lavanderia";
+	src: url("../fonts/LavanderiaSturdy/LavanderiaSturdy.eot");
+	src: url("../fonts/LavanderiaSturdy/LavanderiaSturdy.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/LavanderiaSturdy/LavanderiaSturdy.woff") format("woff"),
+	url("../fonts/LavanderiaSturdy/LavanderiaSturdy.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
+
+strong, b{
+	font-weight: 700;
+}
+body{
+	font: 16px/1.4 "ProximaNova", Arial, sans-serif;
+	color: #222;
+
+}
+img{
+	width:100%;
+	height: auto;
+}
+a{
+	text-decoration: none;
+}
+a,
+input[type="submit"],
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+input[type="button"],
+button{
+	-webkit-transition: color .1s ease-in, border-color .1s ease-in, background-color .1s ease-in, opacity .1s ease-in;
+	-moz-transition: color .1s ease-in, border-color .1s ease-in, background-color .1s ease-in, opacity .1s ease-in;
+	transition: color .1s ease-in, border-color .1s ease-in, background-color .1s ease-in, opacity .1s ease-in;
+}
+h2{
+	font-family: "OstrichSans", Arial, sans-serif;
+	font-size: 30px;
+	margin-bottom: 70px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #000;
+}
+h3{
+	font-family: "OstrichSans", Arial, sans-serif;
+	font-size: 24px;
+	margin-bottom: 25px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+/*Header*/
+.kt-header{
+	position: relative;
+	background-color: #2a323a;
+	padding-top:55px;
+	-ms-transform: skew(0deg,-10deg);
+	-webkit-transform: skew(0deg,-10deg);
+	-moz-transform: skew(0deg,-10deg);
+	transform:skew(0deg,-10deg);
+
+}
+.kt-header:before{
+	content: '';
+	position: absolute;
+	top: -100%;
+	left: 0;
+	right: 0;
+	bottom:99%;
+	background-color: #2a323a;
+	width: 100%;
+	height:auto;
+}
+
+.kt-header .ba-container{
+	transform:skew(0deg,10deg);
+}
+.ba-container{
+	max-width: 940px;
+	position: relative;
+}
+.kt-navigation li{
+	display:inline-block;
+	padding-right: 45px;
+}
+.kt-navigation a{
+	color: #aaadb0;
+	text-transform: uppercase;
+	font: 14px "ProximaNova",Arial,sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+}
+.kt-navigation a:hover{
+	color:#F39C12;
+}
+.kt-navigation .kt-kitchen-master a{
+	font-size: 35px;
+	color:#F39C12;
+}
+.kt-logo{
+	width:41.5%;
+	margin:50px auto 65px;
+}
+
+/*First part of Text*/
+
+.kt-courses{
+	padding: 90px 70px 275px;
+}
+.row{
+	padding-top: 105px;
+}
+.kt-courses .kt-text h3{
+	line-height: 1.25;
+	text-align: left;
+	color:#222222;
+}
+.kt-courses .kt-text h3:hover{
+	color:#F39C12;
+}
+.kt-courses .kt-text p{
+	font: 16px/1.3 "ProximaNova", Arial, sans-serif;
+	text-align: left;
+	font-weight: 400;
+}
+.kt-courses .kt-text p+p{
+	padding-top: 23px;
+}
+.ba-container-courses{
+	max-width: 820px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*Register*/
+
+.kt-register{
+	background-color:#2a323a;
+	transform:skew(0deg,8.5deg);
+	padding-bottom:100px;
+}
+.kt-register .ba-container{
+	transform:skew(0deg,-8.5deg);
+}
+.kt-register img{
+	 position: relative;
+	 top:-70px;
+}
+.kt-register p{
+	font: 30px/1.2 "OstrichSans", Arial, sans-serif;
+	color: #d4d6d8;
+	font-weight: 800;
+	margin-bottom: 23px;
+}
+.kt-button-register{
+	font:24px "ProximaNova", Arial, sans-serif;
+	font-weight: 700;
+	padding: 22px 52px;
+	display: inline-block;
+	background-color: transparent;
+	border: 3px solid #2ECC71;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	color: #2ECC71;
+}
+.kt-button-register:hover{
+	color:#F39C12;
+	background-color: rgba(46, 204, 113, 0.80);
+}
+
+
+
+/*Testimonials*/
+.kt-testimonials{
+	padding: 90px 0 505px;
+	position: relative;
+	z-index: 1;
+}
+.kt-testimonials h2{
+	font: 30px "OstrichSans", Arial, sans-serif;
+	font-weight: 800;
+	color:#000;
+	text-align: center;
+}
+.kt-testimonials-wrap{
+	position: relative;
+}
+[class*="kt-comment"]{
+	width:40.43%;
+	position: absolute;
+}
+.kt-comment-1{
+	top: 0;
+	left: 0;
+}
+.kt-comment-2{
+	right:0;
+	top: 95px;
+}
+.kt-comment-3{
+	left: 0;
+	top: 215px;
+}
+.kt-desc{
+	font: 16px/1.31 "ProximaNova", Arial, sans-serif;
+	font-weight: 400;
+	color: #2a323a;
+	padding-right:12px;
+}
+[class*="comment"] h4{
+	font: 16px/1.31 "ProximaNova", Arial, sans-serif;
+	font-weight: 700;
+	color: #2a323a;
+	display: inline-block;
+	padding: 0 12px;
+}
+.kt-status{
+	font: 13px/1.5 "ProximaNova", Arial, sans-serif;
+	font-weight: 400;
+	color: #898989;
+	padding-right: 13px;
+}
+[class*="comments-line"]{
+	width:377px;
+	height: 20px;
+	border-bottom: 3px solid #a1a1a1;
+	border-right: 3px solid #a1a1a1;
+	position: relative;
+}
+[class*="comments-line"]:after{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 25px;
+	border-bottom: 3px solid #a1a1a1;
+	border-right: 3px solid #a1a1a1;
+	transform: skewY(40deg);
+	background-color: #fff;
+}
+.comments-line1:after{
+	top: 38%;
+	left:40%;
+}
+.comments-line2:after{
+	top: 39%;
+	left:40%;
+}
+.comments-line3:after{
+	top: 46%;
+	left:40%;
+}
+.kt-author{
+	float: right;
+	padding-top: 25px;
+}
+.kt-circle{
+	width:46px;
+	height: 46px;
+	background-color: #000;
+	float: left;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+
+
+
+/* Footer */
+.kt-footer {
+	background: url('../img/footer-map.png');
+	background-size: cover;
+}
+.kt-footer .ba-container {
+	padding-top: 240px;
+	padding-bottom: 67px;
+}
+.kt-footer h3 {
+	color: #F39C12;
+}
+.kt-footer address{
+	color: #fff;
+}
+.kt-footer p {
+	color: #fff;
+}
+.kt-contact {
+	color: #2ECC71;
+}
+.kt-icons a {
+	padding-right: 7px;
+	color: #fff;
+}
+.kt-icons a:hover {
+	color: #F39C12;
+}
+.kt-footer .ba-width-1-4 {
+	border-right: 1px dotted #979798;
+}
+.kt-footer .ba-width-1-4 p:last-child {
+	margin-bottom: 10px;
+}
+.kt-second-column{
+	padding-bottom:65px;
+}
+.kt-footer-navigation li a {
+	color: #fff;
+	line-height: 1.5;
+}
+.kt-footer-navigation li a:hover{
+	color: #F39C12;
+}
+.kc-footer form {
+	margin: 0 70px 30px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+	height: 42px;
+}
+.kt-footer .kt-form {
+	background: transparent;
+	outline: none;
+	height: 50px;
+	line-height: 50px;
+	width: 400px;
+	float: left;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 0;
+	border: none;
+	color: rgba(255, 255, 255, 0.3);
+	text-transform: uppercase;
+}
+.kt-footer button {
+	padding-left: 50px;
+	height: 50px;
+	border: none;
+	background: url('../img/arrow.png') no-repeat 90% 50%;
+}
+p.kt-form-text {
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	padding-top:25px;
+	font-family: "OstrichSans", Arial, sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 1;
+	color: rgba(255, 255, 255, 0.9);
+}
+.kt-copyright {
+	padding-top: 70px;
+}
+.kt-copyright p {
+	font: 14px;
+	color: rgba(255, 255, 255, 0.5);
+}
+.kt-copyright a {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.kit-top-text{
+	background-color: rgb(42, 50, 58);
+	color:#fff;
+	padding-bottom: 73px;
+}
+.kit-top-text .kit-top-text-rule{
+	font: 30px "OstrichSansBold", Arial, sans-serif;
+	line-height: 1.2;
+	text-transform: uppercase;
+
+}
+.kit-top-text .kit-top-text-afraid{
+	font-size: 33px;
+	font-weight: bold;
+	line-height: 1.8;
+	text-transform: uppercase;
+}
+.kit-top-text .kit-top-text-whatever{
+	font: 42px "Lavanderia", Arial, sans-serif;
+	line-height: 1.14;
+}
+.kit-top-text .kit-top-text-whatever:before{
+	content: '';
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+	position: relative;
+	top: 32px;
+	left: 50px;
+	width: 22px;
+	height: 15px;
+	display: block;
+}
+.kit-top-text .kit-top-text-whatever:after{
+	content: '';
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+	position: relative;
+	bottom: 30px;
+	left: 265px;
+	width: 22px;
+	height: 15px;
+	display: block;
+}
+.kit-top-text .kit-top-text-want{
+	font-size: 53px;
+	font-weight: bold;
+	line-height: 0.906;
+	text-transform: uppercase;
+}
+.kit-top-text .kit-top-text-cooking{
+	font: 61px "Neou", Arial, sans-serif;
+	font-weight: bold;
+	line-height: 1.05;
+	text-transform: uppercase;
+}
+.kit-top-text .kit-top-text-rules2{
+	font: 35px "OstrichSansMedium", Arial, sans-serif;
+	line-height: 1.14;
+	text-transform: uppercase;
+
+}
+
+
+
+
+
+
