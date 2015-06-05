@@ -234,12 +234,14 @@ h3{
 	color:#F39C12;
 	background-color: rgba(46, 204, 113, 0.80);
 }
-
+.straight-circle{
+	margin-top: 72px;
+}
 
 
 /*Testimonials*/
 .kt-testimonials{
-	padding: 90px 0 505px;
+	padding: 90px 0 0;
 	position: relative;
 	z-index: 1;
 }
@@ -252,21 +254,15 @@ h3{
 .kt-testimonials-wrap{
 	position: relative;
 }
-[class*="kt-comment"]{
-	width:40.43%;
-	position: absolute;
-}
+
 .kt-comment-1{
-	top: 0;
-	left: 0;
+	float: left;
 }
-.kt-comment-2{
-	right:0;
-	top: 95px;
+.kt-testimonials-wrap .ba-grid .ba-width-medium-5-12.float-right{
+	float: right;
 }
 .kt-comment-3{
-	left: 0;
-	top: 215px;
+	float: left;
 }
 .kt-desc{
 	font: 16px/1.31 "ProximaNova", Arial, sans-serif;
@@ -288,7 +284,8 @@ h3{
 	padding-right: 13px;
 }
 [class*="comments-line"]{
-	width:377px;
+	/*width:377px;*/
+	width: 100%;
 	height: 20px;
 	border-bottom: 3px solid #a1a1a1;
 	border-right: 3px solid #a1a1a1;
@@ -329,6 +326,11 @@ h3{
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
+}
+/*IE*/
+.kt-avatar-circle{
+	width:46px;
+	height: 46px;
 }
 
 

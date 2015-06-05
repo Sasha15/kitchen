@@ -23,8 +23,6 @@
 
     <link rel="stylesheet" href="outdatedbrowser/outdatedbrowser.min.css">
 
-
-
 </head>
 <body>
 	<header class="kt-header ba-text-center">
@@ -39,9 +37,16 @@
 				</ul>
 			</nav>
 			<div class="kt-logo">
+			<!--[if gte IE 9]>
 				<img src="img/logo.svg" alt="logotype"/>
+			<![endif]-->
+			<!--[if lt IE 9]>
+				<img src="img/logo.png" alt="logotype"/>
+			<![endif]-->
+			<!--[if !IE]> -->
+			<img src="img/logo.svg" alt="main-logo"/>
+			<!-- <![endif]-->
 			</div>
-
 		</div>
 	</header>
 <section class="kt-courses">
@@ -80,7 +85,16 @@
 
 <section class="kt-register ba-text-center">
 	<div class="ba-container">
+		<!--[if gte IE 9]>
 		<img src="img/circle.png" alt="circle">
+		<![endif]-->
+		<!--[if lt IE 9]>
+		<img class="straight-circle" src="img/straight-circle.png" alt="circle"/>
+		<![endif]-->
+		<!--[if !IE]> -->
+		<img src="img/circle.png" alt="circle">
+		<!-- <![endif]-->
+
 		<p>Whatever skill, technique or cuisine you want to learn,
 		Kitchen-Master has the perfect cooking classes for you.
 		Register online today and get started on your culinary adventure!</p>
@@ -91,96 +105,136 @@
 	<div class="ba-container">
 		<h2>Testimonials</h2>
 		<div class="kt-testimonials-wrap">
-			<div class="kt-comment-1 cf">
-				<p class="kt-desc">Duis aute irure dolor in reprehenderit in voluptate
-					velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				<div class="comments-line1"></div>
-				<div class="kt-author ba-text-right">
-					<div class="kt-circle"></div>
-					<h4>Roger V. Coates</h4>
 
-					<p class="kt-status">Ut enim ad minim</p></div>
-				</div>
-			<div class="kt-comment-2 cf">
-				<p class="kt-desc">Duis aute irure dolor in reprehenderit in voluptate
-					velit esse cillum dolore eu fugiat nulla pariatur.
-					Excepteur sint occaecat cupidatat non proident, sunt
-					in culpa qui officia deserunt</p>
-				<div class="comments-line2"></div>
-				<div class="kt-author ba-text-right">
-					<div class="kt-circle"></div>
-					<h4>Nancy M. Picker</h4>
+			<div class="ba-grid">
 
-					<p class="kt-status">Ut enim ad minim</p>
+				<div class="ba-width-medium-5-12">
+					<div class="kt-comment-1">
+						<p class="kt-desc">Duis aute irure dolor in reprehenderit in voluptate
+							velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<img src="img/comment.png" alt="circle"/>
+						<div class="kt-author ba-text-right">
+							<!--[if gte IE 9]>
+							<div class="kt-circle"></div>
+							<![endif]-->
+							<!--[if lt IE 9]>
+							<img class="kt-avatar-circle" src="img/avatar.png" alt="circle"/>
+							<![endif]-->
+							<!--[if !IE]> -->
+							<div class="kt-circle"></div>
+							<!-- <![endif]-->
+							<h4>Roger V. Coates</h4>
+
+							<p class="kt-status">Ut enim ad minim</p></div>
+					</div>
 				</div>
 			</div>
-			<div class="kt-comment-3 cf">
-				<p class="kt-desc">Duis aute irure dolor in reprehenderit in voluptate
-					velit esse cillum dolore eu fugiat nulla pariatur.
-					Excepteur sint occaecat cupidatat non proident, sunt
-					in culpa qui officia deserunt</p>
-				<div class="comments-line3"></div>
-				<div class="kt-author  ba-text-right">
-					<div class="kt-circle"></div>
-					<h4>Ann K. Perez</h4>
+			<div class="ba-grid">
+				<div class="ba-width-medium-5-12 float-right">
+					<div class="kt-comment-2">
+						<p class="kt-desc">Duis aute irure dolor in reprehenderit in voluptate
+							velit esse cillum dolore eu fugiat nulla pariatur.
+							Excepteur sint occaecat cupidatat non proident, sunt
+							in culpa qui officia deserunt</p>
 
-					<p class="kt-status">Ut enim ad minim</p></div>
+						<img src="img/comment.png" alt="circle"/>
+						<div class="kt-author ba-text-right">
+							<!--[if gte IE 9]>
+							<div class="kt-circle"></div>
+							<![endif]-->
+							<!--[if lt IE 9]>
+							<img class="kt-avatar-circle" src="img/avatar.png" alt="circle"/>
+							<![endif]-->
+							<!--[if !IE]> -->
+							<div class="kt-circle"></div>
+							<!-- <![endif]-->
+							<h4>Nancy M. Picker</h4>
+
+							<p class="kt-status">Ut enim ad minim</p>
+						</div>
+					</div>
 				</div>
+			</div>
+			<div class="ba-grid">
+				<div class="ba-width-medium-5-12">
+					<div class="kt-comment-3">
+						<p class="kt-desc">Duis aute irure dolor in reprehenderit in voluptate
+							velit esse cillum dolore eu fugiat nulla pariatur.
+							Excepteur sint occaecat cupidatat non proident, sunt
+							in culpa qui officia deserunt</p>
+						<img src="img/comment.png" alt="circle"/>
+						<div class="kt-author  ba-text-right">
+							<!--[if gte IE 9]>
+							<div class="kt-circle"></div>
+							<![endif]-->
+							<!--[if lt IE 9]>
+							<img class="kt-avatar-circle" src="img/avatar.png" alt="circle"/>
+							<![endif]-->
+							<!--[if !IE]> -->
+							<div class="kt-circle"></div>
+							<!-- <![endif]-->
+							<h4>Ann K. Perez</h4>
 
-		</div>
+							<p class="kt-status">Ut enim ad minim</p></div>
+					</div>
+				</div>
+			</div>
+
 	</div>
+</div>
 </section>
 
 <footer class="kt-footer">
-	<div class="ba-container">
-		<div class="ba-grid">
-			<div class="ba-width-small-1-2 ba-width-large-1-4 .ba-grid-nopad">
-				<h3>Kitchen-Master</h3>
-				<address>443 Flanigan Oaks Drive</address>
-				<address>Alexandria, MD 22304</address>
-				<p>PHONE : <span class="kt-contact">+1 234 567890</span><br>
-					MAIL : <span class="kt-contact">mail@domain.com</span></p>
-				<p class="kt-icons">
-					<a href="#"><i class="fa fa-facebook-square"></i></a>
-					<a href="#"><i class="fa fa-twitter-square"></i></a>
-				</p>
-			</div>
-			<div class="ba-width-small-1-2 ba-width-large-1-4 .ba-grid-nopad kt-second-column">
-				<ul class="kt-footer-navigation ba-text-center">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Courses</a></li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">Register</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-			<div class="ba-width-small-1-1 ba-width-large-1-2 .ba-grid-nopad">
-				<form action="#" method="post">
-					<input class="kt-form" type="email" placeholder="Enter your email to subscribe">
-					<button></button>
-				</form>
-				<p class="kt-form-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, suntin culpa qui officia deserunt</p>
-			</div>
+<div class="ba-container">
+	<div class="ba-grid">
+		<div class="ba-width-small-1-2 ba-width-large-1-4 .ba-grid-nopad">
+			<h3>Kitchen-Master</h3>
+			<address>443 Flanigan Oaks Drive</address>
+			<address>Alexandria, MD 22304</address>
+			<p>PHONE : <span class="kt-contact">+1 234 567890</span><br>
+				MAIL : <span class="kt-contact">mail@domain.com</span></p>
+			<p class="kt-icons">
+				<a href="#"><i class="fa fa-facebook-square"></i></a>
+				<a href="#"><i class="fa fa-twitter-square"></i></a>
+			</p>
 		</div>
-		<div class="kt-copyright">
-			<p>Copyright 2014. <a href="#">PSDNewbies</a>. All rights reserved.</p>
-			<p>This PSD template is for practice purpose. No copyright infringement is intended.</p>
+		<div class="ba-width-small-1-2 ba-width-large-1-4 .ba-grid-nopad kt-second-column">
+			<ul class="kt-footer-navigation ba-text-center">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Register</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="ba-width-small-1-1 ba-width-large-1-2 .ba-grid-nopad">
+			<form action="#" method="post">
+				<input class="kt-form" type="email" placeholder="Enter your email to subscribe">
+				<button></button>
+			</form>
+			<p class="kt-form-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, suntin culpa qui officia deserunt</p>
 		</div>
 	</div>
+	<div class="kt-copyright">
+		<p>Copyright 2014. <a href="#">PSDNewbies</a>. All rights reserved.</p>
+		<p>This PSD template is for practice purpose. No copyright infringement is intended.</p>
+	</div>
+</div>
 </footer>
 
-
-<div class="outdated"></div>
+<div id="outdated"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="outdatedbrowser/outdatedbrowser.min.js"></script>
 <script>
-    outdatedBrowser({
-        bgColor: '#f25648',
-        color: '#ffffff',
-        lowerThan: 'transform',
-        languagePath: 'outdatedbrowser/lang/en.html'
-    })
+
+	//plugin function, place inside DOM ready function
+	outdatedBrowser({
+		bgColor: '#f25648',
+		color: '#ffffff',
+		lowerThan: 'transform',
+		languagePath: 'outdatedbrowser/lang/en.html'
+	})
 </script>
 </body>
 </html>
